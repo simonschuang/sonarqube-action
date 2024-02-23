@@ -43,3 +43,7 @@ else
     -Dsonar.login="${INPUT_LOGIN}" \
     -Dsonar.password="${SONAR_PASSWORD}"
 fi
+
+if [[ -d ".scannerwork" ]]; then
+  rm -rf .scannerwork
+fi
